@@ -1,0 +1,101 @@
+body {
+  background: #131720;
+  color: #fefefe;
+  font: 300 1.625em/1.5 "Source Sans Pro", sans-serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 2.5em 0 0;
+}
+
+kbd {
+  font: inherit;
+}
+
+#canvas {
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 300;
+  letter-spacing: 0;
+  margin: 0.5em 0 0;
+}
+
+.color-label {
+  padding-left: 1em;
+}
+
+#rotate {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  margin-bottom: 2em;
+  text-align: right;
+  width: 2.5em;
+
+}
+#rotate:focus {
+  outline: 1px solid;
+}
+#rotate::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-right: 8px;
+  position: relative;
+  width: 16px;
+}
+#rotate::-webkit-inner-spin-button::before, #rotate::-webkit-inner-spin-button::after {
+  content: "^";
+  font-family: monospace;
+  position: absolute;
+  right: 0;
+}
+#rotate::-webkit-inner-spin-button::before {
+  top: 0;
+}
+#rotate::-webkit-inner-spin-button::after {
+  right: 1px;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.palette {
+  margin: 0em auto;
+  overflow: hidden;
+  max-width: 100%;
+  width: 15em;
+}
+
+.single {
+  float: left;
+  overflow: hidden;
+  width: 33%;
+}
+
+.hex {
+  display: block;
+  font-size: 0.75em;
+}
+
+[id^=color] {
+  border-radius: 100%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+.instructions {
+  margin-top: 2em;
+}
+
+body.lightBackground {
+  background: #fcfcfc;
+  color: #131720;
+  font-weight: 400;
+}
+
+.lightBackground .title {
+  font-weight: 400;
+}
